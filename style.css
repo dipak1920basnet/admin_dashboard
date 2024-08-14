@@ -2,16 +2,19 @@
 {
     display: grid;
     gap: 15px;
-    grid-template: repeat(2,1fr)/repeat(2,1fr);
-}
-.header,
-.sidebar,
-.main_body
-{
-    background-color: blue;
-    height: 300px;
+    grid-template: repeat(4,1fr)/repeat(4,1fr);
 }
 .sidebar
 {
+    background-color: blue;
     grid-area: 1/1/span 2/2;
+}
+.header
+{
+    background-color: white;
+    grid-area: 1/2/2/span 4;
+}
+.main_body
+{
+    background-color: gray;
 }
