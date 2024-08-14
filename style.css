@@ -1,0 +1,17 @@
+.main-container
+{
+    display: grid;
+    gap: 15px;
+    grid-template: repeat(2,1fr)/repeat(2,1fr);
+}
+.header,
+.sidebar,
+.main_body
+{
+    background-color: blue;
+    height: 300px;
+}
+.sidebar
+{
+    grid-area: 1/1/span 2/2;
+}
