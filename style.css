@@ -2,12 +2,53 @@
 {
     display: grid;
     gap: 15px;
-    grid-template: repeat(4,1fr)/repeat(4,1fr);
+    grid-template: repeat(2,1fr)/repeat(4,1fr);
 }
 .sidebar
 {
-    background-color: blue;
+    background-color: rgb(3, 182, 241);
     grid-area: 1/1/span 2/2;
+    color: white;
+    padding:10%;
+    padding-bottom: 20%;
+    display: grid;
+    justify-content: space-between;
+    gap: 10%;
+}
+svg
+{
+    fill: white;
+}
+.top
+{
+    display: flex;
+    gap: 20px;
+    margin-right: 20px;
+    /* justify-content: center; */
+    align-items: center;
+}
+.middle
+{
+    background-color: green;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.bottom
+{
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.dashboard
+{
+    height: 75px;
+    margin-right: 10px;
+    
+}
+svg
+{
+    height: 50px;
+    margin-right: 10px;
 }
 .header
 {
