@@ -16,6 +16,25 @@
     justify-content: space-between;
     gap: 2%;
 }
+.header
+{
+    padding: 20px;
+}
+form
+{
+    display: flex;
+}
+input
+{
+    border-radius: 10px;
+    width: 30vw;
+    background-color: rgb(117, 117, 245);
+    padding: 12px;
+}
+input::placeholder {
+    color: black;
+    font-weight: bolder;
+}
 svg
 {
     fill: white;
@@ -77,13 +96,15 @@ svg
     gap: 2%;
 }
 .class_one{
-    /* height: 30%;
-    width: 45%; */
+
     background-color: white;
     margin: 10px;
     border-radius: 10px; 
-    padding: 20px;
+    /* padding: 20px; */
     box-shadow:-5px 0px 0px rgba(255, 0, 0, 1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
     
 }
 .right
@@ -92,17 +113,54 @@ svg
     padding: 10px;
     
 }
+
+.icon > svg
+{
+    fill: black;
+    height: 100%;
+    width: 100%;
+}
+
+.icon
+{
+    display: flex;
+    height: 20%;
+    width: 20%;
+    /* background-color: black; */
+    align-self: flex-end;
+    justify-self:flex-end;
+}
+
 .announcements
 {
     padding: 10px;
     /* background-color: white; */
 }
 .content,
-.trending
+.content_trending
+
 {
+    /* width: 150px; */
+    height: 283px;
     background-color: white;
     padding: 10px;
     border-radius: 10px;
     padding-left: 18px;
     padding-right: 18px;
+    /* white-space: nowrap; */
+    text-overflow: ellipsis;
+    overflow: scroll;
+}
+
+.content_one
+{
+    
+}
+.content_one > h3
+{
+    margin-bottom: -8px;
+}
+.trending
+{
+
 }
