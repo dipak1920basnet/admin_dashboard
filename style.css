@@ -249,7 +249,24 @@ svg
 {
     margin-bottom: -8px;
 }
-.trending
+.content_trending
 {
-
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 18px;
+}
+.content_trending > div
+{
+    border-radius: 50%;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 40px;
+}
+.content_trending > p > span
+{
+    font-weight: bolder;
+    font-size: 18px;
 }
